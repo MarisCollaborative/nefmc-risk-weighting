@@ -50,9 +50,9 @@ library(tidyverse)
 ```
 
 --- welcome
-# Risk Policy Weighting
+## Risk Policy Weighting
 
-## Introduction
+### Introduction
 
 The New England Fishery Management Council's Risk Policy utilizes data and Council member input to characterize the Council's risk tolerance for its managed resouces.
 
@@ -65,7 +65,7 @@ When assessing weightings for the factors, it may be helpful for you to think ab
 - When you have made past decisions at the Council, what has been the primary driver of whether you were willing to accept an option of higher or lower risk? What had little influence on your decision?
 - When considering a factor’s level of importance, it may be helpful to consider whether it is already being accounted for in a stock assessment or existing management process. For example, are climate change impacts via environmental covariates already being accounted for in the stock assessment?
 
-## Instructions
+### Instructions
 
 Complete the matrix below by assigning a weight for each factor. You can choose any whole number between 0 and 4:
 
