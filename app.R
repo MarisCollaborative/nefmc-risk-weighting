@@ -28,7 +28,7 @@ library(shiny)
 # ignore = FALSE or just delete this argument.
 
 db <- sd_db_connect(env_file = ".env",
-                    ignore = FALSE)
+                    ignore = TRUE)
 
 # UI setup --------------------------------------------------------------------
 
@@ -44,7 +44,8 @@ server <- function(input, output, session) {
   # sd_show_if()
 
   # Run surveydown server and define database
-  sd_server(db = db)
+  sd_server(db = db, 
+            capture_metadata = FALSE)
 }
 
 # Launch the app
