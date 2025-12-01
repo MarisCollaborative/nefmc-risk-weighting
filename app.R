@@ -28,7 +28,7 @@ library(shiny)
 # ignore = FALSE or just delete this argument.
 
 db <- sd_db_connect(env_file = ".env",
-                    ignore = TRUE)
+                    ignore = FALSE)
 
 # UI setup --------------------------------------------------------------------
 
