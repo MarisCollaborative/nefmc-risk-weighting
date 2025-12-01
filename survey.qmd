@@ -5,29 +5,29 @@ echo: false
 warning: false
 
 # Theme Settings
-theme: 
-  - flatly
-# brand: 
-#    palette:
-#       dark-navy: "#104149"
-#       dark-blue: "#1d365e"
-#       teal: "#3e9eb6"
-#       light-blue: "#92b3e4"
-#       orange: "#ef953d"
-#       gray: "#7f7f7f"
-#     # background: light-blue
-#     foreground: dark-navy
-#     primary: dark-blue
-#     secondary: teal
-#     tertiary: gray
-#     warning: orange
-#   typography:
-#     base: 
-#       family: Urbanist
-#     headings: 
-#       family: Source Serif 4
-#     link: 
-#       color: teal
+theme: flatly
+brand:
+  color:    
+    palette:
+      dark-navy: "#104149"
+      dark-blue: "#1d365e"
+      teal: "#3e9eb6"
+      light-blue: "#92b3e4"
+      orange: "#ef953d"
+      gray: "#7f7f7f"
+    # background: light-blue
+    foreground: dark-navy
+    primary: dark-blue
+    secondary: teal
+    tertiary: gray
+    warning: orange
+  typography:
+    base: 
+      family: Urbanist
+    headings: 
+      family: Source Serif 4
+    link: 
+      color: teal
 barcolor: "#3e9eb6"
 barposition: top
 footer-left: "Made with [surveydown](https://surveydown.org)"
@@ -50,6 +50,7 @@ library(tidyverse)
 ```
 
 :::{.sd_page id=welcome}
+
 ## Risk Policy Weighting
 
 ### Introduction
@@ -103,7 +104,8 @@ sd_nav()
 
 :::
 
---- end
+:::{.sd_page id=end}
+
 ## End
 
 **Thank you for submitting your risk policy weights!**
@@ -113,3 +115,5 @@ The average of the Council members’ weightings for each factor will be combine
 ```{r close}
 sd_close(show_previous = TRUE)
 ```
+
+:::
