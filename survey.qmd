@@ -123,7 +123,10 @@ sd_nav()
 The average of the Council members’ weightings for each factor will be combined with each factor’s score from the PDT to assess a level of risk tolerance that the Council will apply in decision making.
 
 ```{r close}
-sd_close(show_previous = TRUE)
+sd_close(label_close = "Exit survey", 
+         show_restart = T, 
+         label_restart = "Complete another survey", 
+         show_previous = T)
 ```
 
 :::
