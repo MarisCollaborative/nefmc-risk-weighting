@@ -58,7 +58,7 @@ Please enter the year in which this weighting exercise is taking place.
 ```{r weight year}
 sd_question(
   type = "textarea",
-  id = "weight_year", 
+  id = "report_year", 
   label = "", 
   height = "5px",
   placeholder = as.character(lubridate::year(lubridate::now()))
@@ -96,9 +96,7 @@ sd_question(
   row = c(
     "Biomass/Stock" = "biomass", 
     "Recruitment" = "recruitment", 
-    "Assessment Type & Uncertainty" = "assessment", 
     "Climate Vulnerability" = "climate", 
-    "Fish Condition" = "fish_condition", 
     "Recreational Fishery Characterization" = "recreational", 
     "Commercial Fishery Characterization" = "commercial"
   ),
