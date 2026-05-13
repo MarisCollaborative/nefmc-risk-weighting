@@ -47,6 +47,7 @@ all-questions-required: false
 ```{r}
 library(surveydown)
 library(tidyverse)
+library(gt)
 ```
 
 :::{.sd_page id=welcome}
@@ -60,6 +61,14 @@ sd_question(
   type = "textarea",
   id = "report_year", 
   label = "", 
+  height = "5px",
+  placeholder = as.character(lubridate::year(lubridate::now()))
+)
+
+sd_question(
+  type = "textarea",
+  id = "form_id", 
+  label = "Provide the Form ID number on the anonymous paper copy of the survey", 
   height = "5px",
   placeholder = as.character(lubridate::year(lubridate::now()))
 )
@@ -114,19 +123,32 @@ sd_nav()
 
 :::
 
-:::{.sd_page id=end}
+:::{.sd_page id=thank_you}
 
-## End
+## Thank you!
 
-**Thank you for submitting your risk policy weights!**
-
-The average of the Council members’ weightings for each factor will be combined with each factor’s score from the PDT to assess a level of risk tolerance that the Council will apply in decision making.
+**Your risk policy weights have been submitted!**
+You may now _close this survey window_, submit another survey, or visit the next page to download a report of all the submitted weights for this action year. 
 
 ```{r close}
-sd_close(label_close = "Exit survey", 
-         show_restart = T, 
-         label_restart = "Complete another survey", 
-         show_previous = T)
+sd_close(show_restart = TRUE, 
+         label_restart = "Submit another Survey")
+sd_nav(label_next = "I want a report")
+```
+
+:::
+
+:::{.sd_page id=report}
+
+## NEFMC Risk Policy Weighting Report 
+The average of the Council members’ weightings for each factor will be combined with each factor’s score from the PDT to assess a level of risk tolerance that the Council will apply in decision making.
+
+```{r report}
+# an action button to download the report
+shiny::downloadButton("report", "Download Weightings Report")
+
+# a preview of the report
+gt_output("weight_tbl")
 ```
 
 :::
