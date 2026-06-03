@@ -25,7 +25,7 @@ averages <- params$weights |>
 wts_w_avg <- params$weights |> 
     bind_rows(averages)
 
-wts_w_avg <- wts_w_avg[c(1:19,96, 20:38, 97, 39:57,98, 58:76, 99, 77:95, 100),]
+wts_w_avg <- wts_w_avg[c(1:21,106, 22:42, 107, 43:63, 108, 64:84, 109, 85:105, 110),]
 
 wts_w_avg |> 
     mutate(report_year = case_when(
@@ -37,21 +37,21 @@ wts_w_avg |>
     rename("Weight" = weight) |>
     knitr::kable(booktabs = T) |> 
         kable_styling(latex_options = c("hold_position", "scale_down", "repeat_header"), position = "center", fixed_thead = T, font_size = 12) |> 
-        pack_rows("Biomass", 1,20, background = "#DDDDDD") |> 
-        row_spec(19, hline_after = TRUE) |>
-        row_spec(20, italic = TRUE, align = "r") |>
-        pack_rows("Recruitment", 21,40, background = "#DDDDDD") |> 
-        row_spec(39, hline_after = TRUE) |>
-        row_spec(40, italic = TRUE, align = "r") |>
-        pack_rows("Climate", 41,60, background = "#DDDDDD") |>
-        row_spec(59, hline_after = TRUE) |>
-        row_spec(60, italic = TRUE, align = "r") |>
-        pack_rows("Commercial", 61,80, background = "#DDDDDD") |> 
-        row_spec(79, hline_after = TRUE) |>
-        row_spec(80, italic = TRUE, align = "r") |>
-        pack_rows("Recreational", 81,100, background = "#DDDDDD") |> 
-        row_spec(99, hline_after = TRUE) |>
-        row_spec(100, italic = TRUE, align = "r") |> 
+        pack_rows("Biomass", 1,21, background = "#DDDDDD") |> 
+        row_spec(21, hline_after = TRUE) |>
+        row_spec(22, italic = TRUE, align = "r") |>
+        pack_rows("Recruitment", 23,43, background = "#DDDDDD") |> 
+        row_spec(43, hline_after = TRUE) |>
+        row_spec(44, italic = TRUE, align = "r") |>
+        pack_rows("Climate", 45,66, background = "#DDDDDD") |>
+        row_spec(65, hline_after = TRUE) |>
+        row_spec(66, italic = TRUE, align = "r") |>
+        pack_rows("Commercial", 67,88, background = "#DDDDDD") |> 
+        row_spec(87, hline_after = TRUE) |>
+        row_spec(88, italic = TRUE, align = "r") |>
+        pack_rows("Recreational", 89,110, background = "#DDDDDD") |> 
+        row_spec(109, hline_after = TRUE) |>
+        row_spec(110, italic = TRUE, align = "r") |> 
         column_spec(1, width = "5cm")
 
 
