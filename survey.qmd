@@ -69,8 +69,7 @@ sd_question(
   type = "textarea",
   id = "form_id", 
   label = "Provide the Form ID number on the anonymous paper copy of the survey", 
-  height = "5px",
-  placeholder = as.character(lubridate::year(lubridate::now()))
+  height = "5px"
 )
 ```
 

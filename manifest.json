@@ -3205,7 +3205,7 @@
       "description": {
         "Package": "surveydown",
         "Title": "Markdown-Based Programmable Surveys Using 'Quarto' and 'shiny'",
-        "Version": "1.1.0",
+        "Version": "1.1.3",
         "Authors@R": "c(\n    person(\"John Paul\", \"Helveston\", , \"john.helveston@gmail.com\", role = c(\"aut\", \"cre\", \"cph\"),\n           comment = c(ORCID = \"0000-0002-2657-9191\")),\n    person(\"Pingfan\", \"Hu\", , \"pingfan0727@gmail.com\", role = c(\"aut\", \"cph\"),\n           comment = c(ORCID = \"0009-0001-4877-4844\")),\n    person(\"Bogdan\", \"Bunea\", , \"buneabt@yahoo.com\", role = c(\"aut\", \"cph\"),\n           comment = c(ORCID = \"0009-0006-2942-0588\")),\n    person(\"Stefan\", \"Munnes\", , \"stefan.munnes@wzb.eu\", role = \"ctb\"), \n    person(\"Reed\", \"Benkendorf\", , , role = \"ctb\", comment = c(ORCID = \"0000-0001-9178-3087\")), \n    person(\"Umair\", \"Durrani\", , \"umairdurrani@outlook.com\", role = \"ctb\"), \n    person(\"Dylan\", \"Pieper\", , \"dylanpieper@gmail.com\", role = \"ctb\")\n  )",
         "Description": "Generate programmable surveys using markdown and R code chunks. Surveys\n    are composed of two files: a survey.qmd 'Quarto' file defining the\n    survey content (pages, questions, etc), and an app.R file defining a\n    'shiny' app with global settings (libraries, database configuration,\n    etc.) and server configuration options (e.g., conditional skipping /\n    display, etc.). Survey data collected from respondents is stored in a\n    'PostgreSQL' database. Features include controls for conditional skip\n    logic (skip to a page based on an answer to a question), conditional\n    display logic (display a question based on an answer to a question), a\n    customizable progress bar, and a wide variety of question types,\n    including multiple choice (single choice and multiple choices),\n    select, text, numeric, multiple choice buttons, text area, and dates.\n    Because the surveys render into a 'shiny' app, designers can also\n    leverage the reactive capabilities of 'shiny' to create dynamic and\n    interactive surveys.",
         "License": "MIT + file LICENSE",
@@ -3223,16 +3223,16 @@
         "RemoteUsername": "surveydown-dev",
         "RemotePkgRef": "surveydown-dev/surveydown",
         "RemoteRef": "HEAD",
-        "RemoteSha": "dd72919d3a22d24eedc489e0cf5747c7edab979f",
+        "RemoteSha": "ec9c87137e0359df91c07efd3f359b4ed984acfc",
         "GithubRepo": "surveydown",
         "GithubUsername": "surveydown-dev",
         "GithubRef": "HEAD",
-        "GithubSHA1": "dd72919d3a22d24eedc489e0cf5747c7edab979f",
+        "GithubSHA1": "ec9c87137e0359df91c07efd3f359b4ed984acfc",
         "NeedsCompilation": "no",
-        "Packaged": "2026-02-20 17:41:50 UTC; amiller",
+        "Packaged": "2026-06-02 04:47:51 UTC; amiller",
         "Author": "John Paul Helveston [aut, cre, cph] (ORCID:\n    <https://orcid.org/0000-0002-2657-9191>),\n  Pingfan Hu [aut, cph] (ORCID: <https://orcid.org/0009-0001-4877-4844>),\n  Bogdan Bunea [aut, cph] (ORCID:\n    <https://orcid.org/0009-0006-2942-0588>),\n  Stefan Munnes [ctb],\n  Reed Benkendorf [ctb] (ORCID: <https://orcid.org/0000-0001-9178-3087>),\n  Umair Durrani [ctb],\n  Dylan Pieper [ctb]",
         "Maintainer": "John Paul Helveston <john.helveston@gmail.com>",
-        "Built": "R 4.5.2; ; 2026-02-20 17:41:54 UTC; windows"
+        "Built": "R 4.5.2; ; 2026-06-02 04:47:56 UTC; windows"
       }
     },
     "svglite": {
@@ -3879,7 +3879,7 @@
       "checksum": "8301b0a70f4e12610484ecdddf1a6e7b"
     },
     "_survey/head.rds": {
-      "checksum": "e26dc227ac6bcc2a40fb7a1664a6d4ae"
+      "checksum": "aa8564feb8b1425868ebf40dd154f8f1"
     },
     "_survey/pages.rds": {
       "checksum": "d7f3aa74635e5b62d6bc41aa5d9183de"
@@ -3891,13 +3891,13 @@
       "checksum": "f3c8d0274ad7fc27a6d4e53a278e4a1b"
     },
     "_survey/survey.html": {
-      "checksum": "928c36ef4971aaeba630d4a92f9eaffc"
+      "checksum": "35091ef3fcf28d261f472b486e9dba47"
     },
     "app.R": {
       "checksum": "00fc0782002170c5915374080fae2e62"
     },
     "helpers.R": {
-      "checksum": "fcc8c49c96dfb5e57ec1fd47f6e5c215"
+      "checksum": "8a71d3ad11c282316e7ff9a30c829cd1"
     },
     "preview_data.csv": {
       "checksum": "abe07af97d99fa186025f8532fafb249"
@@ -3909,7 +3909,7 @@
       "checksum": "9a5c92478955b92f7142765dd7f3e018"
     },
     "survey.qmd": {
-      "checksum": "4f924cbc5c263a3b3fd6cf08b78ae10c"
+      "checksum": "6684f7a96032345aee68d35670ca9015"
     }
   },
   "users": null
