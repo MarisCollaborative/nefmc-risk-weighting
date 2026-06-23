@@ -130,8 +130,10 @@ sd_nav()
 You may now _close this survey window_, submit another survey, or visit the next page to download a report of all the submitted weights for this action year. 
 
 ```{r close}
-sd_close(show_restart = TRUE, 
-         label_restart = "Submit another Survey")
+sd_close(label_close = "Exit survey",
+         show_restart = TRUE, 
+         label_restart = "Submit another Survey", 
+         show_previous = T)
 sd_nav(label_next = "I want a report")
 ```
 
