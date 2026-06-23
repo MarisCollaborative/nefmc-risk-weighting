@@ -150,6 +150,10 @@ shiny::downloadButton("report", "Download Weightings Report")
 
 # a preview of the report
 gt_output("weight_tbl")
+
+# add a back button
+sd_nav(show_next = F, 
+show_previous = T)
 ```
 
 :::
